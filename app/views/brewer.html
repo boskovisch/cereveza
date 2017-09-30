@@ -1,7 +1,27 @@
 <div class="container">
-  <div class="row">
+  <form name="brewerForm" ng-submit="vm.saveBrewer(brewerForm)">
     <div class="col-md-6">
-      Brewer
+      <div class="form-group">
+        <label id="brewerNameLabel" for="brewerName">Name</label>
+        <input id="brewerName" class="form-control" type="text" ng-model="vm.brewerModel.name"/>
+      </div>
+      <div class="form-group">
+        <label id="brewerAddressLabel" for="brewerAddress">Address</label>
+        <input id="brewerAddress" class="form-control" type="text" ng-model="vm.brewerModel.address"/>
+      </div>
+      <div class="form-group">
+        <label id="brewerEmailLabel" for="brewerEmail">Email</label>
+        <input id="brewerEmail" class="form-control" type="text" ng-model="vm.brewerModel.email"/>
+      </div>
+      <div class="form-group">
+        <label id="brewerWebsiteLabel" for="brewerWebsite">Website</label>
+        <input id="brewerWebsite" class="form-control" type="text" ng-model="vm.brewerModel.website"/>
+      </div>
+      <div class="form-group">
+        <label id="brewerPhoneLabel" for="brewerPhone">Phone Number</label>
+        <input id="brewerPhone" class="form-control" type="number" ng-model="vm.brewerModel.phone"/>
+      </div>
+      <button id="sbtBrewerSave" class="btn btn-primary"><i class="glyphicon glyphicon-floppy-disk"></i> Save Brewer</button>
     </div>
-  </div>
+  </form>
 </div>
