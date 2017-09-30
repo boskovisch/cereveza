@@ -23,27 +23,27 @@ angular
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
+        controllerAs: 'vm'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
-        controllerAs: 'about'
+        controllerAs: 'vm'
       })
       .when('/reservation', {
         templateUrl: 'views/reservation.html',
         controller: 'ReservationCtrl',
-        controllerAs: 'reservation'
+        controllerAs: 'vm'
       })
       .when('/brewery', {
         templateUrl: 'views/brewery.html',
         controller: 'BreweryCtrl',
-        controllerAs: 'brewery'
+        controllerAs: 'vm'
       })
       .when('/brewer', {
         templateUrl: 'views/brewer.html',
         controller: 'BrewerCtrl',
-        controllerAs: 'brewer'
+        controllerAs: 'vm'
       })
       .otherwise({
         redirectTo: '/'

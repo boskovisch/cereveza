@@ -1,7 +1,27 @@
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      Stuf for the bewery
-    </div>
-  </div>
+    <form name="breweryForm" ng-submit="vm.saveBrewery(breweryForm)">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label id="breweryNameLabel" for="breweryName">Name</label>
+          <input id="breweryName" class="form-control" type="text" ng-model="vm.breweryModel.name"/>
+        </div>
+        <div class="form-group">
+          <label id="breweryLogoLabel" for="breweryLogo">Logo</label>
+          <input id="breweryLogo" type="file" ng-model="vm.breweryModel.logo"/>
+        </div>
+        <div class="form-group">
+          <label id="breweryAddressLabel" for="breweryAddress">Address</label>
+          <input id="breweryAddress" class="form-control" type="text" ng-model="vm.breweryModel.address"/>
+        </div>
+        <div class="form-group">
+          <label id="breweryLatitudeLabel" for="breweryLatitude">Latitude</label>
+          <input id="breweryLatitude" class="form-control" type="text" ng-model="vm.breweryModel.latitude"/>
+        </div>
+        <div class="form-group">
+          <label id="breweryLongitudeLabel" for="breweryLongitude">Longitude</label>
+          <input id="breweryLongitude" class="form-control" type="text" ng-model="vm.breweryModel.longitude"/>
+        </div>
+        <button id="sbtBrewerySave" class="btn btn-primary"><i class="glyphicon glyphicon-floppy-disk"></i> Save Brewery</button>
+      </div>
+    </form>
 </div>
