@@ -1,7 +1,35 @@
 <div class="container">
-  <div class="row">
+  <form name="reservationForm" ng-submit="vm.saveReservation(reservationForm)">
     <div class="col-md-6">
-      Stuf for the reservation
+      <div class="form-group">
+        <label id="reservationTypeLabel" for="reservationType">Reservation Type</label>
+        <input id="reservationType" class="form-control" type="text" ng-model="vm.reservationModel.reservationType"/>
+      </div>
+      <div class="form-group">
+        <label id="beerTypeLabel" for="beerType">Beer Type</label>
+        <input id="beerType" class="form-control" type="text" ng-model="vm.reservationModel.beerType"/>
+      </div>
+      <div class="form-group">
+        <label id="resevationBrewerNameLabel" for="reservationBrewerName">Brewer</label>
+        <input id="reservationBrewerName" class="form-control" type="text" ng-model="vm.reservationModel.brewerName"/>
+      </div>
+      <div class="form-group">
+        <label id="resevationBreweryNameLabel" for="reservationBreweryName">Brewery</label>
+        <input id="reservationBreweryName" class="form-control" type="text" ng-model="vm.reservationModel.breweryName"/>
+      </div>
+      <div class="form-group">
+        <label id="reservationStartDateLabel" for="reservationStartDate">Start Date</label>
+        <input id="reservationStartDate" class="form-control" type="date" ng-model="vm.reservationModel.startDate"/>
+      </div>
+      <div class="form-group">
+        <label id="reservationEndDateLabel" for="reservationEndDate">End Date</label>
+          <input id="reservationEndDate" class="form-control" type="date" ng-model="vm.reservationModel.endDate"/>
+      </div>
+      <div class="form-group">
+        <label id="reservationCommentsLabel" for="reservationComments">Comments</label>
+        <input id="reservationComments" class="form-control" type="text" ng-model="vm.reservationModel.comments"/>
+      </div>
+      <button id="sbtReservationSave" class="btn btn-primary"><i class="glyphicon glyphicon-floppy-disk"></i> Save Reservation</button>
     </div>
-  </div>
+  </form>
 </div>
